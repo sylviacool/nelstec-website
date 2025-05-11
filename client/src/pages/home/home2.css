@@ -1,0 +1,96 @@
+* MEDIA QUERIES (medium screens)*/
+@media screen and (max-width:102.4rem) {
+  /* MAIN HEADER */
+  .main_header {
+    height: fit-content;
+    padding: 12rem 0;
+  }
+
+  .main_header-container {
+   gap: 0;
+  }
+
+  .main_header-circle {
+    width: 22rem;
+  }
+
+
+  /* SERVICES */
+  .services_wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* VALUES */
+  .values_container {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .values_wrapper {
+    gap: 4rem 3rem;
+  }
+
+  .values_image {
+    display: none;
+  }
+
+  /* FAQs */
+  .faqs_wrapper {
+    grid-template-columns: 1fr;
+  }
+
+
+  /* FOOTER */
+  .footer_container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+
+}
+
+
+/* MEDIA QUERIES (small screens)*/
+@media screen and (max-width:60rem) {
+  .main_header {
+    margin-top: 0;
+    padding: 12rem 0 0;
+    height: 100vh;
+  }
+
+  .main_header-image, .main_header-circle {
+    display: none;
+  }
+
+  .main_header-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* SERVICES */
+  .services_wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .services_service {
+    width: 84%;
+    margin: 0 auto;
+  }
+
+  /* VALUE */
+  .values_wrapper {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .card.values_value {
+    width: 84%;
+    margin-inline: auto; /*same as margin: 0 auto;*/
+  }
+
+  /*FAQs*/
+  .faqs_wrapper {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+}
