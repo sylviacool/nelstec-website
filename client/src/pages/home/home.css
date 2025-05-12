@@ -60,7 +60,7 @@
 }
 
 
-/* ================== PROGRAMS ================== */
+/* ================== Services ================== */
 .services {
   margin-top: 4rem;
 }
@@ -184,6 +184,9 @@ footer {
   padding: 4rem 0 2rem;
   font-size: 0.9rem;
   margin-top: 7rem;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .footer_container {
@@ -192,6 +195,7 @@ footer {
   gap: 2rem;
   width: var(--container-width-lg);
   margin: 0 auto;
+  max-width: 100%;
 }
 
 .footer_container article {

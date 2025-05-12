@@ -209,6 +209,15 @@ section {
     text-align: center;
     color: var(--color-gray-100);
   }
+
+  .header_content h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .header_content p {
+    color: rgba(255, 255, 255, 0.8);
+  }
 }
 
 
@@ -223,18 +232,42 @@ section {
   }
 
   h2 {
-
     font-size: 1.6rem;
+  }
+
+  .header_content {
+    width: 80%;
   }
 }
 
 
 
-
 /* MEDIA QUERIES (small screens)*/
 @media screen and (max-width:60rem) {
+  .container {
+    width: 94%;
+    margin: 0 auto;
+  }
+  
   h1 {
     font-size: 2.2rem;
     line-height: 1.3;
+  }
+
+  section {
+    margin-top: 7rem;
+  }
+
+  .header {
+    height: fit-content;
+  }
+
+  .header_content {
+    width: var(--container-width-md);
+    padding: 3rem 0;
+  }
+
+  .header_content p {
+    font-size: 0.85;
   }
 }

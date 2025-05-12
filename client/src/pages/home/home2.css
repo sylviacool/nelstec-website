@@ -79,13 +79,29 @@
   }
 
   /* VALUE */
+  .values {
+    padding: 2rem 0;
+  }
+  
+  .values_container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .values_right > p {
+    margin: 1rem 0 3rem;
+  }
+  
   .values_wrapper {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+  
   .card.values_value {
-    width: 84%;
+    width: 100%;
+    max-width: 84%;
     margin-inline: auto; /*same as margin: 0 auto;*/
+    padding: 2rem 1rem;
   }
 
   .values_image img {
@@ -101,17 +117,26 @@
   /*FOOTER*/
   footer {
     margin-top: 7rem;
+    width: 100%;
+    padding: 4rem 1rem 2rem;
   }
   .footer_container {
     grid-template-columns: 1fr;
     gap: 3rem;
+    width: 100%;
   }
 
   .footer_container article {
     align-items: center;
+    width: 100%;
   }
   .footer_container article:last-child {
     text-align: center;
+  }
+  
+  .footer_copyright {
+    width: 100%;
+    padding: 1rem;
   }
   
 }
