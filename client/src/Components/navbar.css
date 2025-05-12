@@ -1,6 +1,6 @@
 nav {
   height: 5rem;
-  width: 100vw;
+  width: 100%;
   background: var(--color-primary);
   display: grid;
   place-items: center;
@@ -8,6 +8,9 @@ nav {
   top: 0;
   left: 0;
   z-index: 99;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_toggle-btn {
@@ -79,6 +82,8 @@ nav {
     gap: 0;
     align-items: flex-start;
     perspective: 40rem;
+    width: 100%;
+    max-width: 25rem;
   }
 
   .active-nav, .active-nav::after {

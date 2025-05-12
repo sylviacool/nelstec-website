@@ -32,7 +32,7 @@
   }
 
   .values_image {
-    display: none;
+    display: none !important;
   }
 
   /* FAQs */
@@ -88,9 +88,30 @@
     margin-inline: auto; /*same as margin: 0 auto;*/
   }
 
+  .values_image img {
+    display: none;
+  }
+
   /*FAQs*/
   .faqs_wrapper {
     gap: 1rem;
     margin-top: 3rem;
   }
+
+  /*FOOTER*/
+  footer {
+    margin-top: 7rem;
+  }
+  .footer_container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer_container article {
+    align-items: center;
+  }
+  .footer_container article:last-child {
+    text-align: center;
+  }
+  
 }
