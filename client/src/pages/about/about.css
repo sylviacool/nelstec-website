@@ -2,29 +2,52 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 2rem;
-  gap: 2rem;
+  padding: 3rem 2rem;
+  gap: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Second section with reduced top spacing */
+.about__section.second-section {
+  padding-top: 2rem; /* Reduced from 6rem to 2rem */
+}
+
+/* Reverse the order for alternating sections */
+.about__section-reverse {
+  flex-direction: row-reverse;
 }
 
 .about__image {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__image img {
-  width: 100%;
+  width: 90%;
   height: auto;
   border-radius: 50%;
   overflow: hidden;
-  transform: skew(15deg);
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
   transition: var(--transition);
 }
 
-.about__image img:nth-child(2) {
+/* First image styling */
+.about__image img.first-image {
+  transform: skew(15deg);
+}
+
+/* Second image styling */
+.about__image img.second-image {
   transform: skew(-15deg);
 }
 
+/* Hover effect for both images */
 .about__image img:hover {
   transform: skew(0);
+  box-shadow: 0 0 3rem rgba(0, 0, 0, 0.3);
 }
 
 .about__content {
@@ -32,44 +55,77 @@
 }
 
 .about__content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-primary);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.about__content h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 5rem;
+  height: 0.3rem;
+  background: var(--color-secondary);
 }
 
 .about__content p {
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  color: var(--color-gray-200);
 }
-
 
 /* ========== Tablets: max-width 102.4rem ========== */
 @media screen and (max-width: 102.4rem) {
   .about__section {
     flex-direction: column;
     text-align: center;
+    padding: 4rem 2rem;
+  }
+  
+  .about__section-reverse {
+    flex-direction: column; /* Override the reverse on smaller screens */
   }
 
   .about__image,
   .about__content {
     width: 100%;
   }
+  
+  .about__image img {
+    width: 70%;
+  }
 
   .about__content h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+  }
+  
+  .about__content h2::after {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 /* ========== Phones: max-width 60rem ========== */
 @media screen and (max-width: 60rem) {
   .about__section {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    gap: 2rem;
+  }
+  
+  .about__image img {
+    width: 85%;
   }
 
   .about__content h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   .about__content p {
     font-size: 1rem;
+    line-height: 1.6;
   }
 }

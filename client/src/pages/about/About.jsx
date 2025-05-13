@@ -14,9 +14,11 @@ const About = () => {
         we help companies streamline their operations and drive growth through
         our tailored software solutions
       </Header>
+      
+      {/* First section - Image on left, content on right */}
       <section className="about__section">
         <div className="about__image">
-          <img src={aboutImage} alt="Our Vision" />
+          <img src={aboutImage} alt="Our Vision" className="first-image" />
         </div>
         <div className="about__content">
           <h2>Our Vision</h2>
@@ -29,23 +31,19 @@ const About = () => {
         </div>
       </section>
 
-      <section className="about__section">
-        <div className="container about__container">
-          {/* Left Side: Image */}
-          <div className="about__image">
-            <img src={aboutImg} alt="Our Mission" />
-          </div>
-
-          {/* Right Side: Text */}
-          <div className="about__content">
-            <h2>Our Mission</h2>
-            <p>
-              Our mission is to empower businesses by delivering innovative IT
-              services including SAP solutions, cloud computing, and website
-              development. We strive to help clients achieve their goals through
-              reliable technology and expert consulting.
-            </p>
-          </div>
+      {/* Second section - Image on right, content on left */}
+      <section className="about__section about__section-reverse second-section">
+        <div className="about__image">
+          <img src={aboutImg} alt="Our Mission" className="second-image" />
+        </div>
+        <div className="about__content">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is to empower businesses by delivering innovative IT
+            services including SAP solutions, cloud computing, and website
+            development. We strive to help clients achieve their goals through
+            reliable technology and expert consulting.
+          </p>
         </div>
       </section>
     </>
