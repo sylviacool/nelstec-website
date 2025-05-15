@@ -17,9 +17,14 @@ const MainHeader = () => {
             scale your business to new heights with innovative, reliable, and
             efficient technology.
           </p>
-          <Link to="/services" className="btn lg">
-            Get Started
-          </Link>
+          <div className="cta-container">
+            <Link to="/services" className="btn lg">
+              Get Started
+            </Link>
+            <Link to="/contact" className="btn lg btn-secondary">
+              Free Consultation
+            </Link>
+          </div>
         </div>
         <div className="main_header-right">
           <div className="main_header-circle"></div>

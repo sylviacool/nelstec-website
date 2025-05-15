@@ -26,8 +26,24 @@
 }
 
 .main_header-left p {
-  margin: 1rem 0 3.5rem;
+  margin: 1rem 0 2rem;
   font-size: 1.1rem;
+}
+
+.cta-container {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-gray-600);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary);
+  color: var(--color-gray-100);
 }
 
 .main_header-right {
@@ -281,6 +297,47 @@ footer .logo img {
   padding-top: 2rem;
   border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
   font-size: 0.8rem;
+}
+
+/* Scroll to top button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--color-primary);
+  color: var(--color-gray-100);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  z-index: 99;
+  opacity: 0.8;
+  animation: fadeIn 0.3s ease-in-out;
+  border: none;
+}
+
+.scroll-to-top:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-gray-600);
+  opacity: 1;
+  transform: translateY(-0.3rem);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
+  }
+  to {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
 }
 
 

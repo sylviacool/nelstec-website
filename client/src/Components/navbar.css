@@ -84,6 +84,8 @@ nav {
     perspective: 40rem;
     width: 100%;
     max-width: 25rem;
+    transform: translateX(100%); /* Start off-screen */
+    transition: transform 300ms ease-in-out;
   }
 
   .active-nav, .active-nav::after {
@@ -135,8 +137,24 @@ nav {
 
   .show_nav {
     display: flex;
+    transform: translateX(0); /* Slide in */
   }
+  
   .hide_nav {
-    display: none;
+    transform: translateX(100%); /* Slide out */
+    display: flex; /* Keep it in the DOM for animation */
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction while hidden */
+  }
+  
+  @keyframes slideInMenu {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 }
