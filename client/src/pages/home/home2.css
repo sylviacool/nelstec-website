@@ -1,4 +1,4 @@
-* MEDIA QUERIES (medium screens)*/
+/* MEDIA QUERIES (medium screens)*/
 @media screen and (max-width:102.4rem) {
   /* MAIN HEADER */
   .main_header {
@@ -21,18 +21,35 @@
   }
 
   /* VALUES */
+  .values {
+    padding: 4rem 0;
+    min-height: auto;
+  }
+
   .values_container {
     grid-template-columns: 1fr;
     justify-content: center;
     gap: 4rem;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .values_wrapper {
-    gap: 4rem 3rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .values_left {
+    display: none;
   }
 
   .values_image {
-    display: none !important;
+    display: none;
+  }
+
+  .card.values_value {
+    width: 100%;
+    padding: 2.5rem 1.5rem;
   }
 
   /* FAQs */
@@ -78,9 +95,10 @@
     margin: 0 auto;
   }
 
-  /* VALUE */
+  /* VALUES */
   .values {
-    padding: 2rem 0;
+    padding: 3rem 0;
+    min-height: auto;
   }
   
   .values_container {
@@ -90,20 +108,41 @@
   
   .values_right > p {
     margin: 1rem 0 3rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
   
   .values_wrapper {
     grid-template-columns: 1fr;
-    gap: 3rem;
+    gap: 2.5rem;
   }
   
   .card.values_value {
     width: 100%;
-    max-width: 84%;
-    margin-inline: auto; /*same as margin: 0 auto;*/
-    padding: 2rem 1rem;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
 
+  .card.values_value span {
+    top: -1.2rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+  }
+
+  .card.values_value h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .card.values_value small {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .values_left,
+  .values_image,
   .values_image img {
     display: none;
   }
