@@ -36,7 +36,7 @@
 
 .service-detail__description p {
   margin-bottom: 1rem;
-  color: var(--color-gray-500);
+  color: var(--color-gray-100);
 }
 
 .service-detail__description ul {
@@ -60,7 +60,7 @@
 
 .service-detail__benefits li {
   margin-bottom: 0.5rem;
-  color: var(--color-gray-500);
+  color: var(--color-gray-100);
 }
 
 .service-detail__cta {
@@ -74,6 +74,10 @@
 .service-detail__cta h3 {
   color: var(--color-gray-100);
   margin-top: 0;
+}
+
+.service-detail__cta p {
+  margin-bottom: 1rem;
 }
 
 .service-detail__cta .btn {
