@@ -16,17 +16,18 @@
   margin-top: 2rem;
 }
 
-.services_service {
+.services_service.card {
   background: var(--color-gray-500);
-  border-radius: 1rem;
+  border-radius: 5rem !important;
   padding: 2rem;
   transition: var(--transition);
   text-align: center;
 }
 
-.services_service:hover {
+.services_service.card:hover {
   background: var(--color-gray-400);
   box-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.3);
+  border-radius: 5rem !important;
 }
 
 .services_service span {
