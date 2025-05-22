@@ -30,6 +30,11 @@ nav {
   display: block;
 }
 
+.logo img {
+  filter: contrast(1.5) brightness(0.85);  /* Increase contrast and reduce brightness for bolder appearance */
+  -webkit-filter: contrast(1.5) brightness(0.85);
+}
+
 
 .nav_links {
   display: flex;

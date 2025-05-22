@@ -263,6 +263,8 @@ footer {
 
 footer .logo img {
   width: 12rem;
+  filter: contrast(1.5) brightness(0.85);  /* Increase contrast and reduce brightness for bolder appearance */
+  -webkit-filter: contrast(1.5) brightness(0.85);
 }
 
 .footer_socials {

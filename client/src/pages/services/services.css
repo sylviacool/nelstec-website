@@ -62,6 +62,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
   }
+  
+  .services-page {
+    margin-top: 1rem !important;  /* Reduced from 5rem to 1rem for medium screens */
+  }
 }
 
 /* MEDIA QUERIES (small screens) */
