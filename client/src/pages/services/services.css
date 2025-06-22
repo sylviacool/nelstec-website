@@ -63,8 +63,8 @@
     gap: 2rem;
   }
   
-  .services-page {
-    margin-top: 1rem !important;  /* Reduced from 5rem to 1rem for medium screens */
+  .services-page__container {
+    margin-top: 2rem !important;  /* Reduced from 5rem to 1rem for medium screens */
   }
 }
 
@@ -75,7 +75,7 @@
     gap: 1.5rem;
   }
   
-  .services-page {
+  .services-page__container {
     margin-top: 3rem !important;  /* Increased spacing for small screens */
   }
 }
