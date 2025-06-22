@@ -74,4 +74,8 @@
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
+  
+  .services-page {
+    margin-top: 3rem !important;  /* Increased spacing for small screens */
+  }
 }
